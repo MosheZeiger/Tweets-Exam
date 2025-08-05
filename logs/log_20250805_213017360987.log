@@ -1,0 +1,47 @@
+2025-08-05 21:30:17 - logger - INFO - <module> - --- Running ReportGenerator in stand-alone test mode ---
+2025-08-05 21:30:17 - logger - INFO - <module> - Step 1: Exploring raw data...
+2025-08-05 21:30:17 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 21:30:17 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 21:30:17 - logger - INFO - load_csv - Data loaded. Initial shape: (6941, 6)
+2025-08-05 21:30:17 - logger - INFO - __init__ - DataExplorer initialized with DataFrame of shape: (6941, 6)
+2025-08-05 21:30:17 - logger - INFO - run_full_exploration - Starting full data exploration.
+2025-08-05 21:30:17 - logger - INFO - get_count_by_category - Counting unique values in column: Biased
+2025-08-05 21:30:17 - logger - INFO - calculate_average_word_count - Calculating average word count for 'Text' grouped by 'Biased'
+2025-08-05 21:30:17 - logger - INFO - get_n_longest_texts_by_category - Finding 3 longest texts by word count for each category in 'Biased'
+2025-08-05 21:30:17 - logger - INFO - get_most_common_words - Finding 10 most common words in column: Text
+2025-08-05 21:30:18 - logger - INFO - get_most_common_words - Most common words found: ['the', 'jews', 'to', 'of', 'and', 'in', 'a', 'is', 'israel', 'for']
+2025-08-05 21:30:18 - logger - INFO - count_uppercase_words_by_category - Counting uppercase words in 'Text', grouped by 'Biased'.
+2025-08-05 21:30:18 - logger - INFO - count_uppercase_words_by_category - Uppercase word counts calculated: {'total': 6988, '0': 5851, '1': 1137}
+2025-08-05 21:30:18 - logger - INFO - run_full_exploration - Data exploration completed.
+2025-08-05 21:30:18 - logger - INFO - run_full_exploration - Data exploration completed.
+2025-08-05 21:30:18 - logger - INFO - <module> - Raw data exploration complete.
+2025-08-05 21:30:18 - logger - INFO - <module> - 
+--- Step 2: Processing and Cleaning Data ---
+2025-08-05 21:30:18 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - Starting data processing pipeline...
+2025-08-05 21:30:18 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 21:30:18 - logger - INFO - load_csv - Data loaded. Initial shape: (6941, 6)
+2025-08-05 21:30:18 - logger - INFO - select_columns - Selecting columns: ['Text', 'Biased']
+2025-08-05 21:30:18 - logger - INFO - select_columns - Columns selected. New shape: (6941, 2)
+2025-08-05 21:30:18 - logger - INFO - remove_unclassified_rows - Removing unclassified rows from column: Biased. Initial rows: 6941
+2025-08-05 21:30:18 - logger - INFO - remove_unclassified_rows - No unclassified rows found to remove.
+2025-08-05 21:30:18 - logger - INFO - convert_to_lowercase - Converted column 'Text' to lowercase successfully.
+2025-08-05 21:30:18 - logger - INFO - remove_punctuation - Removed punctuation from column 'Text' successfully.
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - --- Pipeline Summary ---
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - Initial shape: 6941 rows, 6 columns
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - Final shape:   6941 rows, 2 columns
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - ------------------------
+2025-08-05 21:30:18 - logger - INFO - run_processing_pipeline - Data processing pipeline completed. Final shape: (6941, 2)
+2025-08-05 21:30:18 - logger - INFO - <module> - Data cleaning complete.
+2025-08-05 21:30:18 - logger - INFO - <module> - 
+--- Step 3: Generating Reports ---
+2025-08-05 21:30:18 - logger - INFO - __init__ - ReportGenerator initialized with formatter: AntisemitismReportFormatter
+2025-08-05 21:30:18 - logger - INFO - generate_all_reports - Starting report generation...
+2025-08-05 21:30:18 - logger - INFO - generate_csv_report - Generating CSV report at C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\results\tweets_dataset_cleaned.csv
+2025-08-05 21:30:18 - logger - INFO - generate_csv_report - CSV report generated successfully at C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\results\tweets_dataset_cleaned.csv
+2025-08-05 21:30:18 - logger - INFO - generate_json_report - Formatting results for JSON output...
+2025-08-05 21:30:18 - logger - INFO - generate_json_report - Generating JSON report at C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\results\results.json
+2025-08-05 21:30:18 - logger - INFO - generate_json_report - JSON report generated successfully at C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\results\results.json
+2025-08-05 21:30:18 - logger - INFO - generate_all_reports - Report generation completed.
+2025-08-05 21:30:18 - logger - INFO - <module> - 
+--- ReportGenerator end-to-end test completed ---
