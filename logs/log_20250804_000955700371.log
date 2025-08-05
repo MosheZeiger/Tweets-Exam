@@ -1,0 +1,6 @@
+2025-08-04 00:09:55 - logger - INFO - <module> - === Starting DataProcessor Test ===
+2025-08-04 00:09:55 - logger - INFO - __init__ - DataProcessor initialized with file path: D:\Analiza\Teweets_Exam\data\tweets_dataset.csv
+2025-08-04 00:09:55 - logger - INFO - load_csv - Attempting to load data from D:\Analiza\Teweets_Exam\data\tweets_dataset.csv
+2025-08-04 00:09:55 - logger - INFO - load_csv - Data loaded successfully with shape: (6941, 6)
+2025-08-04 00:09:55 - logger - INFO - <module> - DataFrame loaded with 6941 rows and 6 columns.
+2025-08-04 00:09:55 - logger - INFO - <module> - --- DataProcessor test completed ---

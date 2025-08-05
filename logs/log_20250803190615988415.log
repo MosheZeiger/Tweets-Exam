@@ -1,0 +1,2 @@
+2025-08-03 19:06:15 - tweets - INFO - <module> - Starting data loading process
+2025-08-03 19:06:15 - tweets - ERROR - load_data - An error occurred: 'utf-8' codec can't decode byte 0x92 in position 4503: invalid start byte
