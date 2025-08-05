@@ -25,9 +25,17 @@ LOGS_DIR = PROJECT_ROOT / 'logs'
 # ----------------
 CSV_ENCODING = 'latin-1'
 CLASSIFICATION_COLUMN = 'Biased'
-RELEVANT_COLUMNS = []
+TEXT_COLUMN = 'Text'
+RELEVANT_COLUMNS = ['Text', 'Biased']
 CATEGORY_MAPPING = {
 }
+
+
+# -----------------
+# ANALYSIS CONFIGURATION
+# -----------------
+TOP_N_LONGEST_TWEETS = 3
+TOP_N_COMMON_WORDS = 10
 
 # ----------------
 # Logging configuration

@@ -74,20 +74,20 @@ if __name__ == "__main__":
     # test_logger.info("--- DataProcessor test completed ---")
 
     # test removing unclassified rows
-    df_raw = processor_for_testing.load_csv()
-    if df_raw is None:
-        test_logger.error("Failed to load DataFrame. aborting test.")
-    else:
-        test_logger.info(f"Raw DataFrame loaded with {df_raw.shape[0]} rows and {df_raw.shape[1]} columns.")
-        test_logger.info("\nTesting Removing unclassified rows method ---")
-        from src.config import CLASSIFICATION_COLUMN 
-        df_cleaned = processor_for_testing.remove_unclassified_rows(target_column=CLASSIFICATION_COLUMN)
-        if df_cleaned is not None:
-            test_logger.info(f"Cleaned DataFrame has {df_cleaned.shape[0]} rows")
-            test_logger.info(f"Types of '{CLASSIFICATION_COLUMN}' column: {df_cleaned[CLASSIFICATION_COLUMN].dtype}")
-            print("\nFirst 5 rows of the cleaned dataframe:")
-            print(df_cleaned.head())
-        else:
-            test_logger.error("Failed to clean DataFrame.")
-    test_logger.info("--- DataProcessor test completed ---")
+    # df_raw = processor_for_testing.load_csv()
+    # if df_raw is None:
+    #     test_logger.error("Failed to load DataFrame. aborting test.")
+    # else:
+    #     test_logger.info(f"Raw DataFrame loaded with {df_raw.shape[0]} rows and {df_raw.shape[1]} columns.")
+    #     test_logger.info("\nTesting Removing unclassified rows method ---")
+    #     from src.config import CLASSIFICATION_COLUMN 
+    #     df_cleaned = processor_for_testing.remove_unclassified_rows(target_column=CLASSIFICATION_COLUMN)
+    #     if df_cleaned is not None:
+    #         test_logger.info(f"Cleaned DataFrame has {df_cleaned.shape[0]} rows")
+    #         test_logger.info(f"Types of '{CLASSIFICATION_COLUMN}' column: {df_cleaned[CLASSIFICATION_COLUMN].dtype}")
+    #         print("\nFirst 5 rows of the cleaned dataframe:")
+    #         print(df_cleaned.head())
+    #     else:
+    #         test_logger.error("Failed to clean DataFrame.")
+    # test_logger.info("--- DataProcessor test completed ---")
 
