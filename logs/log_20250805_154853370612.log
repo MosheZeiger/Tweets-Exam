@@ -1,0 +1,11 @@
+2025-08-05 15:48:53 - logger - INFO - <module> - === Starting DataExplorer Test ===
+2025-08-05 15:48:53 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 15:48:53 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 15:48:53 - logger - INFO - load_csv - Data loaded successfully with shape: (6941, 6)
+2025-08-05 15:48:53 - logger - INFO - __init__ - DataExplorer initialized with DataFrame of shape: (6941, 6)
+2025-08-05 15:48:53 - logger - INFO - <module> - Testing count by category method.
+2025-08-05 15:48:53 - logger - INFO - get_count_by_category - Counting unique values in column: Biased
+2025-08-05 15:48:53 - logger - INFO - get_count_by_category - Count by category for 'Biased': {'0': 5691, '1': 1250, 'Total': 6941}
+2025-08-05 15:48:53 - logger - INFO - <module> - Counts for 'Biased': {'0': 5691, '1': 1250, 'Total': 6941}
+2025-08-05 15:48:53 - logger - INFO - <module> - Testing 'calculate_average_word_count'.
+2025-08-05 15:48:53 - logger - ERROR - calculate_average_word_count - One of the specified columns 'text' or 'Biased' does not exist in DataFrame.

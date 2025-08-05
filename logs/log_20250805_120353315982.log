@@ -1,0 +1,10 @@
+2025-08-05 12:03:53 - logger - INFO - <module> - === Starting DataProcessor Test ===
+2025-08-05 12:03:53 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 12:03:53 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 12:03:53 - logger - INFO - load_csv - Data loaded successfully with shape: (6941, 6)
+2025-08-05 12:03:53 - logger - INFO - <module> - Raw DataFrame loaded with 6941 rows and 6 columns.
+2025-08-05 12:03:53 - logger - INFO - <module> - 
+Testing Removing unclassified rows method ---
+2025-08-05 12:03:53 - logger - ERROR - remove_unclassified_rows - Column 'Biaed' not found in raw data.
+2025-08-05 12:03:53 - logger - ERROR - <module> - Failed to clean DataFrame.
+2025-08-05 12:03:53 - logger - INFO - <module> - --- DataProcessor test completed ---

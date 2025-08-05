@@ -1,0 +1,14 @@
+2025-08-05 20:34:42 - logger - INFO - <module> - === Starting DataProcessor Test ===
+2025-08-05 20:34:42 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 20:34:42 - logger - INFO - run_processing_pipeline - Starting data processing pipeline...
+2025-08-05 20:34:42 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 20:34:43 - logger - INFO - load_csv - Data loaded. Initial shape: (6941, 6)
+2025-08-05 20:34:43 - logger - INFO - select_columns - Selecting columns: ['Text', 'Biased']
+2025-08-05 20:34:43 - logger - INFO - select_columns - Columns selected. New shape: (6941, 2)
+2025-08-05 20:34:43 - logger - INFO - remove_unclassified_rows - Removing unclassified rows from column: Biased. Initial rows: 6941
+2025-08-05 20:34:43 - logger - INFO - remove_unclassified_rows - No unclassified rows found to remove.
+2025-08-05 20:34:43 - logger - INFO - convert_to_lowercase - Converted column 'Text' to lowercase successfully.
+2025-08-05 20:34:43 - logger - INFO - run_processing_pipeline - Data processing pipeline completed. Final shape: (6941, 2)
+2025-08-05 20:34:43 - logger - INFO - <module> - Processing pipeline completed successfully with shape: (6941, 2)
+2025-08-05 20:34:43 - logger - INFO - <module> - Data shape after processing: (6941, 2)
+2025-08-05 20:34:43 - logger - INFO - <module> - === DataProcessor Test Completed ===

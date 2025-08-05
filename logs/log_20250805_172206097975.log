@@ -1,0 +1,11 @@
+2025-08-05 17:22:06 - logger - INFO - <module> - === Starting DataExplorer Test ===
+2025-08-05 17:22:06 - logger - INFO - __init__ - DataProcessor initialized with file path: C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 17:22:06 - logger - INFO - load_csv - Attempting to load data from C:\Analiza\Kodkod_2025\Projects\Tweets-Exam\data\tweets_dataset.csv
+2025-08-05 17:22:06 - logger - INFO - load_csv - Data loaded successfully with shape: (6941, 6)
+2025-08-05 17:22:06 - logger - INFO - __init__ - DataExplorer initialized with DataFrame of shape: (6941, 6)
+2025-08-05 17:22:06 - logger - INFO - <module> - 
+--- Testing run_full_exploration ---
+2025-08-05 17:22:06 - logger - INFO - run_full_exploration - Starting full data exploration.
+2025-08-05 17:22:06 - logger - INFO - get_count_by_category - Counting unique values in column: Biased
+2025-08-05 17:22:06 - logger - INFO - calculate_average_word_count - Calculating average word count for 'Text' grouped by 'Biased'
+2025-08-05 17:22:06 - logger - INFO - get_n_longest_texts_by_category - Finding 3 longest texts by word count for each category in 'Biased'
