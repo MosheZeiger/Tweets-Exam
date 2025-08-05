@@ -22,6 +22,33 @@ class DataExplorer:
         self.exploration_results = {}
         logger.info(f"DataExplorer initialized with DataFrame of shape: {self.df.shape}")
 
+    def run_full_exploration(self) -> dict:
+        """
+        Runs all exploration methods and returns the consolidated results.
+        """
+        logger.info("Starting full data exploration.")
+        self.get_count_by_category(category_column=config.CLASSIFICATION_COLUMN)
+        self.calculate_average_word_count(
+            text_column=config.TEXT_COLUMN,  
+            category_column=config.CLASSIFICATION_COLUMN
+        )
+        self.get_n_longest_texts_by_category(
+            text_column=config.TEXT_COLUMN,
+            category_column=config.CLASSIFICATION_COLUMN,
+            n=config.TOP_N_LONGEST_TWEETS
+        )
+        self.get_most_common_words(
+            text_column=config.TEXT_COLUMN,
+            n=config.TOP_N_COMMON_WORDS
+        )
+        self.count_uppercase_words_by_category(
+            text_column=config.TEXT_COLUMN,
+            category_column=config.CLASSIFICATION_COLUMN
+        )
+        logger.info("Data exploration completed.")
+        logger.info("Data exploration completed.")
+        return self.exploration_results
+
     def get_count_by_category(self, category_column: str) -> dict:
         if category_column not in self.df.columns:
             logger.error(f"Column '{category_column}' does not exist in DataFrame.")
@@ -146,33 +173,6 @@ class DataExplorer:
         self.exploration_results['uppercase_words_count'] = final_results
         
         return final_results
-
-    def run_full_exploration(self) -> dict:
-        """
-        Runs all exploration methods and returns the consolidated results.
-        """
-        logger.info("Starting full data exploration.")
-        self.get_count_by_category(category_column=config.CLASSIFICATION_COLUMN)
-        self.calculate_average_word_count(
-            text_column=config.TEXT_COLUMN,  
-            category_column=config.CLASSIFICATION_COLUMN
-        )
-        self.get_n_longest_texts_by_category(
-            text_column=config.TEXT_COLUMN,
-            category_column=config.CLASSIFICATION_COLUMN,
-            n=config.TOP_N_LONGEST_TWEETS
-        )
-        self.get_most_common_words(
-            text_column=config.TEXT_COLUMN,
-            n=config.TOP_N_COMMON_WORDS
-        )
-        self.count_uppercase_words_by_category(
-            text_column=config.TEXT_COLUMN,
-            category_column=config.CLASSIFICATION_COLUMN
-        )
-        logger.info("Data exploration completed.")
-        logger.info("Data exploration completed.")
-        return self.exploration_results
 
 
 if __name__ == "__main__":
