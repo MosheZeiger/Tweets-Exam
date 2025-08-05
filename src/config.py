@@ -24,6 +24,7 @@ LOGS_DIR = PROJECT_ROOT / 'logs'
 # Data configuration
 # ----------------
 CSV_ENCODING = 'latin-1'
+CLASSIFICATION_COLUMN = 'Biased'
 RELEVANT_COLUMNS = []
 CATEGORY_MAPPING = {
 }
